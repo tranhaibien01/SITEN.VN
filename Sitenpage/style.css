@@ -1,3 +1,4 @@
+@import url('./font.css');
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +6,7 @@
 }
 body,html{
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'vl_ampleregular_3';
     width: 100%;
     height: 100%;
 }
@@ -14,19 +15,19 @@ body,html{
     width: 100%;
     height: 64px;
     top: 0;
+    z-index: 999;
 }
 .header .header-hidden{
     width: 100%;
     height: 100%;
     background-color: #231f20;
-    opacity: .8;
+    opacity: .4;
 }
 .header .header-content{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0px;
-    z-index: 1;
 }
 .header-logo img{
     width: 141px;
@@ -41,7 +42,7 @@ body,html{
 }
 .menu-nav {
     float: right;
-    margin: 20px 100px 0 0;
+    margin: 20px 80px 0 0;
 }
 .header-menu .menu-nav li{
     display: inline-block;
@@ -51,20 +52,44 @@ body,html{
 }
 .menu-nav li a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.3rem;
     line-height: 24px;
     color:  #fff;
+    font-weight: 600;
 }
 .menu-nav li a:hover{
     color: rgb(237 36 56);
 }
-.menu-nav li a:active{
-    color: rgb(237 36 56);
+.nav-items a.active{
+    color: #ed2438;
+}
+.menu-nav .box-lang:hover .box-lang-button{
+    display: block;
+    background-color: #231f20;
+}
+.menu-nav .box-lang {    
+    position: relative;
+
+}
+.menu-nav .box-lang a{ 
+    border: 1px solid #fff;
+    padding: 3px 8px;
 }
 
+.menu-nav .box-lang .box-lang-button{
+    position: absolute;
+    margin-top: 2px;
+    width: 39px;
+    text-align: center;
+    display: none;
+    background-color: #231f20;
+}
+.menu-nav .box-lang .button-2{
+    margin-top: 33px;
+}
 /*banner*/
 .banner{
-    background-image:url(/image/01-Home.png);
+    background-image:url(./image/01-Home.png);
     background-size: cover;
     height: 36rem;
     top: 0;
@@ -73,19 +98,19 @@ body,html{
     position: absolute;
     width: 80%;
     left: 20%;
-    top: 23%;
+    top: 20%;
 }
 .overlay .slogan-title{
     color: #fff;
-    font-size: 2.5em;
+    font-size: 3.5em;
 }
 .overlay .slogan-button{
     background-color: #ed2438;
     height: 36px;
     line-height: 36px;
     padding: 0 16px;
-    margin: 8px 6px 0 ;
-    width: 235px;
+    margin: 8px 0 0 ;
+    width: 270px;
     border-radius: 2px;
 }
 .overlay .slogan-button:hover{
@@ -94,7 +119,9 @@ body,html{
 .overlay .slogan-a{
     color: #fff;
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
 }
 .overlay .slogan-a:hover{
     color: #000;
@@ -102,29 +129,36 @@ body,html{
 
 /*intro*/
 .intro{
-    height: 57rem;
+    height: 84vh;
     width: 100%;
     position: relative;
     background-color: #e7e7e7;
     padding: 15px;
 }
 .wrapper{
+    height: 100%;
     position: relative;
     margin: 0 auto;
+}
+@media(min-width:1024px){
+    .wrapper{
     width: 70rem;
+
+    }
 }
 .intro .lucgiac-overlay{
     position: absolute;
     top: -12rem;
-    overflow: hidden;
-    left: 18px;
+    left: -24px;
+    height: 160%;
+    /* width: 1015px; */
 }
 .intro .lucgiac-overlay .lucgiac{
-    width: 1000px;
-    max-width: 95%;
-    height: 1100px;
-    background-image: url(/image/lucgiac.png);
-    background-size: cover;
+    height: 100%;
+    background-image: url(./image/lucgiac.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 22px;
 }
 .intro .lucgiac-overlay .lucgiac .content-top{
     position: relative;
@@ -142,7 +176,7 @@ body,html{
 }
 .intro .lucgiac-overlay .lucgiac .content-top .title .sp1{
     color: #2c2c2c;
-    font-weight: lighter;
+    font-weight: 100;
 }
 .intro .lucgiac-overlay .lucgiac .content-top .title .sp2{
     color: #ed2438;
@@ -161,13 +195,13 @@ body,html{
 }
 .lucgiac .description{
     position: relative;
-    overflow: hidden;
     display: table;
     width: 100%;
     padding: 3rem;
 }
 .lucgiac .description .description-items{
     width: 33%;
+    text-align: center;
     display: table-cell;
     vertical-align: middle;
     height: 100%;
@@ -176,7 +210,6 @@ body,html{
 .lucgiac .description .description-items img{
     display: inline-block;
     width: 82px;
-    margin:0 0 16px 90px;
 }
 .lucgiac .description .description-items span{
     display: block;
@@ -184,6 +217,7 @@ body,html{
     line-height: 1.5rem;
     height: 3rem;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     opacity: 0.8;
 }
 
@@ -204,15 +238,17 @@ body,html{
 }
 .intro .lucgiac-overlay .lucgiac .content-bottom .title .sp4{
     color: #ed2438;
-
 }
-
+/* .intro .divider{    
+    background-color: #ccc;
+    height: 1px;
+} */
 /*service*/
 
 .service{
     padding: 15px;
     position: relative;
-    height: 1000px;
+    margin-bottom: 30px;
 }
 .service .service-title{
     margin: 50px 0 20px;
@@ -234,22 +270,23 @@ body,html{
 .service .wrapper .service-para{
     font-size: 1.5rem;
     margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
     opacity: 0.8;
 }
 .service .service-container4{
     display: grid;
     justify-content: space-around;
     grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
+    column-gap: 145px;
     row-gap: 60px;
 }
 .service-container4 .service-wrapper{
-    width: 120%;
+    width: 100%;
 }
 .service .service-container4 .service-wrapper img{
     width: 82px;
     float: left;
-    margin: 0 16px 50px;
+    margin: 0 16px 50px 0;
 }
 .service-container4 .service-wrapper ul>li,
 .service .service-wrapper5 ul>li{
@@ -257,12 +294,15 @@ body,html{
     list-style-type: none;
     font-size: 14px;
     line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 100px;
 }
 .service-container4 .service-wrapper h4,
 .service .service-wrapper5 h4{
     font-size: 22px;
     color: #ed2438;
     font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .service .service-wrapper5{
     position: absolute;
@@ -277,13 +317,14 @@ body,html{
 }
 .contact-us{
     background-color: #ed2438;
-    font-size: 16px;
+    font-size: 18px;
     margin: 280px 0 0 380px;
     text-align: center;
     width: 200px;
     height: 40px;
     line-height: 42px;
     border-radius: 3px;
+    font-weight: 600;
 }
 .contact-us:hover{
     background-color: #801621;
@@ -295,7 +336,7 @@ body,html{
 
 /*project*/
 .recent-project{
-    background-image: url(/image/bgr-prj.png);
+    background-image: url(./image/bgr-prj.png);
     height: 50rem;
     background-size: cover;
 }
@@ -317,20 +358,23 @@ body,html{
 .recent-project .project-it{
     margin-top: 30px;
     display: grid;
+    justify-content: center;
     grid-template-columns: auto auto auto auto;
     row-gap: 60px;
+    column-gap: 60px;
 }
 .recent-project .project-it .project-items img{
     height: 120px;
-    margin-left: 30px;
 }
 .recent-project .project-contact{
     background-color: #ed2438;
-    width:450px;
+    width: 55%;
     height: 40px;
     text-align: center;
-    margin: 90px 0 0 260px;
     border-radius: 3px;
+    position: absolute;
+    left: 22%;
+    bottom: 10%;
 }
 .recent-project .project-contact:hover{ 
     background-color: #801621;
@@ -339,13 +383,14 @@ body,html{
 .recent-project .project-contact a{
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 40px;
+    font-weight: 600;
 }
 
 /*watch word*/
 .watchword{
-    background-image: url(/image/bgr-word.jpg);
+    background-image: url(./image/bgr-word.jpg);
     height: 35rem;
     background-size: cover;
     background-position: center;
@@ -357,7 +402,8 @@ body,html{
 }
 .watchword .title span{
     display: block;
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 3.5rem;
 }
 .watchword .title .watch-sp1{
     font-weight: 100;
@@ -367,20 +413,22 @@ body,html{
     color: #ed2438;
 }
 .watchword h3{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     text-align: center;
     color: #2c2c2c;
     font-weight: 100;
+    margin-top: 20px;
 }
 .watchword .word-contact{
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: -420px;
+    bottom: -90px;
     text-align: center;
 }
 .watchword .word-contact div{
-    background-image: url(/image/word-contact.png);
+    background-image: url(./image/word-contact.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -392,12 +440,14 @@ body,html{
 .watchword .word-contact div>span{
     color: #666;
     display: block;
-    padding: 60px 0 7px;
+    padding: 55px 0 7px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .watchword .word-contact div>a{
     color: #ed2438;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 .watchword .word-contact div>a:hover{
@@ -409,15 +459,14 @@ body,html{
     height: auto;
     background-color: #2c2c2c;
     padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .footer-content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 40px;
 }
-.footer-content .footer-content-col{
 
-}
 .footer-content .footer-content-col1 h4{
     color: #fff;
     margin-bottom: 20px;
@@ -427,6 +476,9 @@ body,html{
 .footer-content .footer-content-col1 li{
     list-style-type: none;
     display: inline;
+}
+.footer-content .footer-content-col1 a{
+    color: #2c2c2c;
 }
 .footer-content .footer-content-col1 img{
     width: 31px;
@@ -445,6 +497,9 @@ body,html{
         text-decoration: none;
         color: #fff;
 }
+.footer-content .footer-content-col2 .menu-page li>a:hover{
+    text-decoration:underline;
+}
 .footer-content .footer-content-col3 h4{
     color: #ed2438;
     font-size: 1.8rem;
@@ -457,6 +512,5 @@ body,html{
 .footer .footer-bottom{
     color: #fff;
     text-align: center;
-    opacity: 0.7;
     font-size: 0.9rem;
 }

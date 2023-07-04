@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Công ty phần mềm Siten</title>
 </head>
 <body>
@@ -12,43 +14,82 @@
         <div class="header-hidden"></div>
         <div class="header-content">
             <div class="header-logo">
-                <a href="/index.html">
-                    <img alt="Siten logo" class="logo" src="/image/logo-siten.svg">
+                <a href="./index.html">
+                    <img alt="Siten logo" class="logo" src="./image/logo-siten.svg">
                 </a>
             </div>
             <div class="header-menu">
                 <ul class="menu-nav">
                     <li class="nav-items">
-                        <a href="/index.html">TRANG CHỦ</a>
+                        <a href="./index.html" class="active">TRANG CHỦ</a>
                     </li>
                     <li class="nav-items">
-                        <a href="/index.html">DỊCH VỤ</a>
+                        <a href="./index.html">DỊCH VỤ</a>
                     </li>
                     <li class="nav-items">
-                        <a href="/index.html">DỰ ÁN</a>
+                        <a href="./index.html">DỰ ÁN</a>
                     </li>
                     <li class="nav-items">
-                        <a href="/index.html">SITEN</a>
+                        <a href="./index.html">SITEN</a>
                     </li>
                     <li class="nav-items">
-                        <a href="/index.html">TUYỂN DỤNG</a>
+                        <a href="./index.html">TUYỂN DỤNG</a>
                     </li>
                     <li class="nav-items">
-                        <a href="/index.html">LIÊN HỆ</a>
+                        <a href="./index.html">LIÊN HỆ</a>
                     </li>
-                    <li class="nav-items">
-                        <a href="/index.html">VN</a>
+                    <li class="nav-items box-lang">
+                        <a href="./index.html">VN</a>
+                        <ul>
+                            <li><a href="#" class="box-lang-button">JP</a></li>
+                            <li><a href="#" class="box-lang-button button-2">EN</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </div>
-    </div>
+        <label for="nav-mobile-input" class="nav-menu-cover">          
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </label>            
+                <input type="checkbox" hidden name="" class="nav-checkbox" id="nav-mobile-input">
+                <label for="nav-mobile-input" class="nav-overlay"></label>
+            <div class="nav-mobile">
+                <img alt="Logo of Siten" class="nav-logo-overlay" src="./image/logo-siten.svg">
+                <ul class="menu-nav-mobile">
+                    <li class="nav-items-mobile">
+                        <a href="./index.html">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-items-mobile">
+                        <a href="./index.html">DỊCH VỤ</a>
+                    </li>
+                    <li class="nav-items-mobile">
+                        <a href="./index.html">DỰ ÁN</a>
+                    </li>
+                    <li class="nav-items-mobile">
+                        <a href="./index.html">SITEN</a>
+                    </li>
+                    <li class="nav-items-mobile">
+                        <a href="./index.html">TUYỂN DỤNG</a>
+                    </li>
+                    <li class="nav-items-mobile">
+                        <a href="./index.html">LIÊN HỆ</a>
+                    </li>
+                    <li class="nav-items-mobile box-lang-mobile">
+                        <a href="./index.html">EN</a>
+                    </li>
+                    <li class="nav-items-mobile box-lang-mobile">
+                        <a href="./index.html">JP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 <!-- banner -->
     <div class="banner">
             <div class="overlay">
                 <h1 class="slogan-title">TẠO GIÁ TRỊ CUỘC SỐNG, PHÁT TRIỂN CÙNG DOANH NGHIỆP</h1>
                 <div class="slogan-button">
-                    <a href="#" class="slogan-a">CHÚNG TÔI CÓ THỂ GÌ CHO BẠN</a>
+                    <a href="#" class="slogan-a">CHÚNG TÔI CÓ THỂ GIÚP GÌ CHO BẠN</a>
                 </div>
             </div>
     </div>
@@ -68,15 +109,15 @@
                         </h2>
                         <div class="description">
                             <div class="description-items">
-                                <img src="/image/item-1.svg">
+                                <img src="./image/item-1.svg">
                                 <span>Nguồn lực nhân sự lớn, tài năng và đang phát triển lớn mạnh</span>
                             </div>
                             <div class="description-items">
-                                <img src="/image/item-2.svg">
+                                <img src="./image/item-2.svg">
                                 <span>Ổn định chính trị và nhận được nhiều hỗ trợ tích cực từ Chính Phủ</span>
                             </div>
                             <div class="description-items">
-                                <img src="/image/item-3.svg">
+                                <img src="./image/item-3.svg">
                                 <span>Chi phí cạnh tranh</span>
                             </div>
                         </div>
@@ -85,15 +126,15 @@
                         <div class="divider"></div>
                         <div class="description">
                             <div class="description-items">
-                                <img src="/image/item-4.svg">
+                                <img src="./image/item-4.svg">
                                 <span>Dịch vụ chất lượng tốt</span>
                             </div>
                             <div class="description-items">
-                                <img src="/image/item-5.svg">
+                                <img src="./image/item-5.svg">
                                 <span>Làm việc nhóm hiệu quả</span>
                             </div>
                             <div class="description-items">
-                                <img src="/image/item-6.svg">
+                                <img src="./image/item-6.svg">
                                 <span>Luôn hướng tới mục tiêu gia tăng giá trị lợi ích cho khách hàng</span>
                             </div>
                         </div>
@@ -106,6 +147,55 @@
             </div>
         </div> 
     </div>
+<!-- intro 2-->
+<div class="intro-2">
+            <div class="box-intro">
+                <div class="content-mobile-top">
+                    <h2 class="title">
+                        <div class="outs">
+                            <span class="ins">
+                                <span class="sp1">TẠI SAO</span>
+                                <span class="sp2">VIỆT NAM</span>
+                            </span>
+                        </div>
+                    </h2>
+                    <div class="description">
+                        <div class="description-items">
+                            <img src="./image/item-1.svg">
+                            <p>Nguồn lực nhân sự lớn, tài năng và đang phát triển lớn mạnh</p>
+                        </div>
+                        <div class="description-items">
+                            <img src="./image/item-2.svg">
+                            <p>Ổn định chính trị và nhận được nhiều hỗ trợ tích cực từ Chính Phủ</p>
+                        </div>
+                        <div class="description-items">
+                            <img src="./image/item-3.svg">
+                            <p>Chi phí cạnh tranh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-mobile-bottom">
+                    <h2 class="title">
+                        <span class="sp3">TẠI SAO</span>
+                        <span class="sp4">SITEN</span>
+                    </h2>
+                    <div class="description">
+                        <div class="description-items">
+                            <img src="./image/item-4.svg">
+                            <p>Dịch vụ chất lượng tốt</p>
+                        </div>
+                        <div class="description-items">
+                            <img src="./image/item-5.svg">
+                            <p>Làm việc nhóm hiệu quả</p>
+                        </div>
+                        <div class="description-items">
+                            <img src="./image/item-6.svg">
+                            <p>Luôn hướng tới mục tiêu gia tăng giá trị lợi ích cho khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
 <!--service-->  
     <div class="service">
         <div class="wrapper">
@@ -120,7 +210,7 @@
             </p>
             <div class="service-container4">
                 <div class="service-wrapper">
-                    <img src="/image/sv-1.svg">
+                    <img src="./image/sv-1.svg">
                     <h4>Ứng dụng Web & Website</h4>
                     <ul>
                         <li>Thiết kế và phát triển Website</li>
@@ -132,7 +222,7 @@
                     </ul>
                 </div>
                 <div class="service-wrapper">
-                    <img src="/image/sv-2.svg">
+                    <img src="./image/sv-2.svg">
                     <h4>Phầm mềm cho Di động</h4>
                     <ul>
                         <li>Game</li>
@@ -142,7 +232,7 @@
                     </ul>
                 </div>
                 <div class="service-wrapper">
-                    <img src="/image/sv-3.svg">
+                    <img src="./image/sv-3.svg">
                     <h4>Tư vấn & Giải pháp CNTT</h4>
                     <ul>
                         <li>Bảng điện tử online</li>
@@ -153,7 +243,7 @@
                     </ul>
                 </div>
                 <div class="service-wrapper">
-                    <img src="/image/sv-4.svg">
+                    <img src="./image/sv-4.svg">
                     <h4>Dịch vụ cho thuê nhân sự</h4>
                     <ul>
                         <li>Lập trình viên PHP</li>
@@ -164,9 +254,23 @@
                         <li>Kiểm thử</li>
                     </ul>
                 </div>
+                <div class="service-wrapper6">
+                    <img src="./image/sv-5.svg">
+                    <h4>Lĩnh vực phần mềm thế mạnh</h4>
+                    <ul>
+                        <li>Tư vấn và triển khai ERP</li>
+                        <li>Hệ thống thương mại điện tử</li>
+                        <li>Phần mềm kế toán, tài chính</li>
+                        <li>Phần mềm quản lý tài liệu, văn bản</li>
+                        <li>Phần mềm quản lý dự án</li>
+                        <li>Nghiệp vụ cho các hệ thống viễn thông</li>
+                        <li>Y tế - khám chữa bệnh từ xa</li>
+                        <li>Du lịch</li>
+                    </ul>
+                </div>
             </div>
             <div class="service-wrapper5">
-                <img src="/image/sv-5.svg">
+                <img src="./image/sv-5.svg">
                 <h4>Lĩnh vực phần mềm thế mạnh</h4>
                 <ul>
                     <li>Tư vấn và triển khai ERP</li>
@@ -197,42 +301,42 @@
         <div class="project-it">
             <div class="project-items">
                 <a href="https://www.vietteltelecom.vn" target="_blank">
-                    <img class="prj-items-img" alt="" src="/image/Viettel.png">
+                    <img class="prj-items-img" alt="" src="./image/Viettel.png">
                 </a>
             </div>
             <div class="project-items">
                 <a href="#" target="_blank">
-                    <img class="prj-items-img" alt="" src="/image/reach.png">
+                    <img class="prj-items-img" alt="" src="./image/reach.png">
                 </a>
             </div>
             <div class="project-items">
                 <a href="https://www.microsoft.com" target="_blank">
-                    <img class="prj-items-img" alt="" src="/image/Microsoft.png">
+                    <img class="prj-items-img" alt="" src="./image/Microsoft.png">
                 </a>
             </div>
             <div class="project-items">
                 <a href="https://www.winrock.org" target="_blank">
-                    <img class="prj-items-img" alt="" src="/image/Winrock.png">
+                    <img class="prj-items-img" alt="" src="./image/Winrock.png">
                 </a>
             </div>
             <div class="project-items">
                 <a href="#" target="_blank">
-                    <img class="prj-items-img" alt="" src="/image/one-create-group.png">
+                    <img class="prj-items-img" alt="" src="./image/one-create-group.png">
                 </a>
             </div>
             <div class="project-items">
                 <a href="https://www.garena.vn" target="_blank">
-                    <img class="prj-items-img" alt="" src="/image/GARENA.png">
+                    <img class="prj-items-img" alt="" src="./image/GARENA.png">
                 </a>
             </div>
             <div class="project-items">
                 <a href="http://vusta.vn" target="_blank">
-                    <img class="prj-items-img" alt="" src="/image/vusta.png">
+                    <img class="prj-items-img" alt="" src="./image/vusta.png">
                 </a>
             </div>
             <div class="project-items">
                 <a href="#" target="_blank">
-                    <img class="prj-items-img" alt="" src="/image/2nf-cut.png">
+                    <img class="prj-items-img" alt="" src="./image/2nf-cut.png">
                 </a>
             </div>
         </div>
@@ -257,6 +361,10 @@
                 </div>
             </div>
         </div>
+        <div class="word-contact-2">
+            <span>CHÚNG TA CÓ THỂ CỘNG TÁC?</span>
+            <a href="#">LIÊN HỆ VỚI SITEN</a>
+        </div>
     </div>
 
 <!--footer-->
@@ -269,22 +377,22 @@
                     <ul>
                         <li>
                             <a href="https://www.facebook.com/siten.jsc" target="_blank">
-                                <img src="/image/facebook.svg">
+                                <img src="./image/facebook.svg">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/channel/UC8Zc6FfEQZtHSmqsR23dPcg" target="_blank">
-                                <img src="/image/youtube.svg">
+                                <img src="./image/youtube.svg">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/company/siten-corporation" target="_blank">
-                                <img src="/image/linkedin.svg">
+                                <img src="./image/linkedin.svg">
                             </a>
                         </li>
                         <li>
                             <a href="mailto:contact@siten.vn" target="_blank">
-                                <img src="/image/email.svg">
+                                <img src="./image/email.svg">
                             </a>
                         </li>
                     </ul>
@@ -327,6 +435,5 @@
         </div>
     </div>
 </footer>
-<script src="/main.js"></script>
 </body>
 </html>
