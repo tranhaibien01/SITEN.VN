@@ -69,7 +69,7 @@ body,html{
 }
 .menu-nav .box-lang {    
     position: relative;
-
+    width: 40px;
 }
 .menu-nav .box-lang a{ 
     border: 1px solid #fff;
@@ -112,6 +112,7 @@ body,html{
     margin: 8px 0 0 ;
     width: 270px;
     border-radius: 2px;
+    cursor: pointer;
 }
 .overlay .slogan-button:hover{
     background-color: #fff;
@@ -239,10 +240,7 @@ body,html{
 .intro .lucgiac-overlay .lucgiac .content-bottom .title .sp4{
     color: #ed2438;
 }
-/* .intro .divider{    
-    background-color: #ccc;
-    height: 1px;
-} */
+
 /*service*/
 
 .service{
@@ -325,6 +323,7 @@ body,html{
     line-height: 42px;
     border-radius: 3px;
     font-weight: 600;
+    cursor: pointer;
 }
 .contact-us:hover{
     background-color: #801621;
@@ -375,6 +374,7 @@ body,html{
     position: absolute;
     left: 22%;
     bottom: 10%;
+    cursor: pointer;
 }
 .recent-project .project-contact:hover{ 
     background-color: #801621;

@@ -1,5 +1,5 @@
 /*pc*/
- @media (min-width: 768px) {
+@media (min-width: 768px) {
     .intro-2{
         display: none;
     }
@@ -21,36 +21,41 @@
 
 /*header*/
 @media (min-width: 768px) and (max-width: 1023px){
-
-.header-logo img {
-    width: 115px;
-    height: 40px;
-    margin: 10px 0 0 20px;
-}
-.header-menu{
-    float: right;
-}
-.header-menu .menu-nav li{
-    margin-right: 15px;
-}
-.header-menu .menu-nav li>a{
-    font-size: 1rem;
+.header .header-content{
+    .header-logo{
+        img{
+            width: 115px;
+            height: 40px;
+            margin-top: 7px;
+        }
+    }
+    .header-menu{
+        float: right;
+        .menu-nav{
+            margin: 20px 5% 0 0;
+            li{
+                margin-right: 15px;
+                a{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
 }
 /*banner*/
 .banner{
     width: 100%;
     background-size: cover;
     height: 27rem;
+    .overlay{
+        width: 80%;
+        left: 5%;
+        top: 15%;
+        .slogan-title{
+            font-size: 2rem;
+        }
+    }
 }   
-.overlay{
-    width: 80%;
-    left: 5%;
-    top: 15%;
-}
-.overlay .slogan-title{
-    font-size: 2rem;
-}
-
 /*intro*/
 .intro{
     padding: 0;
@@ -75,6 +80,10 @@
 }
 
 /*service*/
+.service{
+    height: auto;
+    margin-bottom: 60px;
+}
 .service .wrapper .service-para {
     font-size: 1rem
 }
@@ -86,8 +95,8 @@
     left: 20%;
     margin-top: 30px;
 }
-.contact-us{
-    margin: 240px 50px 0 260px;
+.service .wrapper .contact-us{
+    margin: 260px 50px 0 260px;
 }
 
 /*project*/
@@ -129,14 +138,14 @@
 
 
 /*mobile*/
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 /*header*/
-.nav-menu-cover{
+.nav-menu-cover img{
     position: absolute;
     top: 16px;
     left: 20px;
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
 }
 .nav-overlay{
@@ -200,14 +209,13 @@
     border: 1px solid #fff;
 }
 
-.header .header-logo{
+.header .header-content .header-logo{
     float: right;
 }
 .header .header-logo img{
     width: 141px;
     margin-right: 20px;
 }
-
 
 .header .header-menu{
     display: none;
@@ -270,6 +278,9 @@
 }
 
 /*service*/
+.service{
+    height: auto;
+}
 .service .service-title{
     text-align: center;
     font-size: 3rem;
@@ -307,7 +318,7 @@
     line-height: 20px;
     width: auto;
 }
-.contact-us{
+.service .contact-us{
     margin: 5% 0 0 24%;
 }
 /*project*/
@@ -322,9 +333,11 @@
     column-gap: 49px;
 }
 .recent-project .project-it .project-items img{
-    height: 100px;
+    height: 85px;
 }
 .recent-project .project-contact{
+    width: 300px;
+    left: 12%;
     overflow: hidden;
 }
 .recent-project .project-contact a{
@@ -372,23 +385,29 @@
 }
 
 /*footer*/
-.footer-content{
-    padding: 20px 0;
-    text-align: center;
-    grid-template-columns: auto;
-}
-.footer-content .footer-content-col1 h4{
-    font-size: 1.2rem;
-    margin: 0;
-}
-.footer-content .footer-content-col1 img{
-    margin: 0 0 20px;
-}
-.footer-content .footer-content-col2 .menu-page li>a{
-    font-size: 0.9rem;
-}
-.footer-content .footer-content-col2 .menu-page{
-    -webkit-columns: 1;
-    margin-bottom: 30px;
+.footer{
+    .footer-content{
+        padding: 20px 0;
+        text-align: center;
+        grid-template-columns: auto;
+        .footer-content-col1{
+            h4{
+                font-size: 1.2rem;
+                margin: 0;
+            }
+            img{
+                margin: 0 0 20px;
+            }
+        }
+        .footer-content-col2{
+            .menu-page{
+                -webkit-columns: 1;
+                margin-bottom: 30px;
+                a{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
 }
 }
