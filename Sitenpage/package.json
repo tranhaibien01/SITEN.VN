@@ -1,0 +1,17 @@
+{
+  "name": "sitenpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sasstocss": "node-sass sass/responsiveplus.scss css/responsive.css"
+  },
+  "scripts": {
+    "sasstocss": "node-sass sass/styleplus.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
