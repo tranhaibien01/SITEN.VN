@@ -1,6 +1,8 @@
 # SITEN.VN
 
-CÀI ĐẶT LIVE SASS COMPILER TRONG VISUAL STUDIO CODE:
-- Mở mục Extensions và search LIVE SASS COMPILER và install
-- Tạo file có đuôi .scss sẽ tự động tạo ra file .css và .css.map
-- Bật WATCH SASS ở góc phải bên dưới tab VISUAL và code
+SỬ DỤNG NODEJS TẠO TRÌNH BIÊN DỊCH SCSS SANG CSS
+- Cài đặt NodeJs
+- Dùng command prompt để tạo file package
+- Vào file package.json nhập lệnh để dịch file scss sang file css
+- Tạo file text document và nhập vào dòng lệnh npm run sasstocss và chuyển đuôi file từ .txt thành .bat
+- Code và khi dịch sẽ chạy file đuôi .bat
